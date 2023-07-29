@@ -1,5 +1,5 @@
 self.addEventListener("install", installEvent => {
-  alert("Service worker installed");
+  alert("Service worker installed 1");
 });
 
 Notification.requestPermission().then(result => {
@@ -8,6 +8,6 @@ Notification.requestPermission().then(result => {
     const text = `notification 1`;
     const notification = new Notification("To do list", { body: text, icon: img });
   } else {
-    alert("No permission 1");
+    alert("No permission 2");
   }
 });
